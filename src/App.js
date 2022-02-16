@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+
+import BasicForm from './BasicForm';
+import ComponentMap from './ComponentMap';
+import FormRender from './FormRender';
+import RequiredForm from './RequiredForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <h1> Data Driven Forms</h1>
+        <div>
+          <h2>Basic Form</h2>
+          <BasicForm/>
+        </div>
+        <div>
+          <ComponentMap/>
+        </div>
+        <div>
+          <FormRender/>
+        </div>
+        <div>
+          <h2>Required Form</h2>
+          <RequiredForm/>
+        </div>
+      </div>
   );
 }
 

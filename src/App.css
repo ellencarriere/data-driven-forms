@@ -1,5 +1,19 @@
 .App {
-  text-align: center;
+  display: flex;
+  max-width: 80%;
+  justify-content: space-between;
+  padding: 4rem;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.half-page {
+  width: 50%;
 }
 
 .App-logo {
